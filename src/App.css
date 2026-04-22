@@ -228,6 +228,7 @@ button {
   gap: 30px;
   padding: 20px;
   justify-content: space-between;
+  z-index: 99999;
 }.settingsMenu select{
   font-size: 20px;
   height: 20%;
