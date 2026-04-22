@@ -87,8 +87,8 @@ export default function DailyWeather({ weather, t, degree, windSpeed }) {
             <p className="date">{displayDate}</p>
             <p className="weatherIcon">{weatherIcons[daily.weather_code[i]] ?? "🌡️"}</p>
             <div className="temps">
-              <p><span>{t.max}:</span> {degree==="Цельсий"?daily.temperature_2m_max[i]+"°": hourly.temperature_2m[baseIndex - 3 + i] * 2 + 30 + "F"}</p>
-              <p><span>{t.min}:</span> {daily.temperature_2m_min[i]}°C</p>
+              <p><span>{t.max}:</span> {degree==="Цельсий"?daily.temperature_2m_max[i]+"°": hourly.temperature_2m_max[baseIndex - 3 + i] * 2 + 30 + "F"}</p>
+              <p><span>{t.min}:</span> {degree==="Цельсий"?daily.temperature_2m_min[i]+"°": hourly.temperature_2m_min[baseIndex - 3 + i] * 2 + 30 + "F"}</p>
             </div>
           </div>
           
