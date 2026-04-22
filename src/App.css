@@ -257,6 +257,7 @@ button {
     width: 25%;
     height: 40%;
     font-size: 15px;
+    z-index: 9999;
   }
   .settingsMenu select{
     width: 78%;
