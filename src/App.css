@@ -217,10 +217,10 @@ button {
 }
 .settingsMenu{
   position: absolute;
-  width: 15%;
+  width: 17%;
   height: 20%;
   top: 14%;
-  left: 59%;
+  left: 79%;
   background: rgb(240, 239, 239);
   display: flex;
   align-items: center;
