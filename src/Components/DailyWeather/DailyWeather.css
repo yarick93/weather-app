@@ -1,0 +1,183 @@
+.dailyWeather{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 15px;
+}
+.dailyWeatherItem{
+    width: 13%;
+height: 250px;
+padding: 15px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+border-radius: 10px;
+    transition:all 0.4s  ease-in-out;
+}
+.weatherIcon{
+    font-size: 50px;
+}
+.temps{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+.temps span{
+    font-weight: normal;
+    color: grey;
+}
+.date{
+    font-size: 20px;
+}
+.SelectedDailyWeatherItem{
+        width: 13%;
+height: 250px;
+padding: 15px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+    transform: scale(1.05);
+    transition:all 0.4s  ease-in-out;
+    border-radius: 10px;
+    box-shadow: 3px 1px 20px 1px;
+}
+.selected{
+    width: 100%;
+}
+.selectedTable{
+    width: 100%;
+    height: 250px;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+td{
+    border: 1px solid black;
+    width: 6%;
+    font-size: 18px;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+            background: #cae6ff;
+                transition:all 0.3s  ease-in-out;
+}
+.currentWeather{
+    font-size: 30px;
+
+        background: #cae6ff;
+}
+
+.selected{
+    border-radius: 15px;
+    border: 1px solid;
+    overflow: hidden;
+}
+.firstTd{
+font-size: 18px;
+font-weight: bold;
+background: #67ade2;
+color: rgb(226, 226, 226);
+width: 7%;
+}
+td:hover{
+    transform: scale(1.15);
+    box-shadow: 2px 2px 2px 2px white;
+
+
+}
+.timeTd{
+    background:#67ade2 ;
+    color: rgb(226, 226, 226);
+}
+.currentNightWeather{
+        font-size: 30px;
+    background: linear-gradient();
+        background: #319fff;
+}
+.selectedTable {
+    display: table;
+}
+.mobileHours {
+    display: none;
+}
+@media screen and (max-width:768px) {
+        .selectedTable {
+        display: none;
+    }
+    .mobileHours {
+        display: block;
+        height: auto;
+    }
+    .hourRow {
+        display: grid;
+        grid-template-columns: 70px 50px 1fr 1fr 1fr;
+        border-bottom: 1px solid black;
+    }
+    .hourRow:last-child {
+        border-bottom: none;
+    }
+    .hourTime {
+        background: #67ade2;
+        color: rgb(226, 226, 226);
+        font-weight: bold;
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hourCell {
+        background: #cae6ff;
+        font-size: 17px;
+        padding: 8px;
+        text-align: center;
+        border-left: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dailyWeather{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .days{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .dailyWeatherItem{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .SelectedDailyWeatherItem{
+            width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .selected{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .days .weatherIcon{
+        font-size: 50px;
+    }
+}
