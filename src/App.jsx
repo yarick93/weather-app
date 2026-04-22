@@ -4,7 +4,7 @@ import { supabase } from './supabase/supabase'
 import Loading from './Components/Loading/Loading'
 import DailyWeather from './Components/DailyWeather/DailyWeather'
 import contract from "./assets/img/contract.jpg"
-import casino from "./assets/img/casino.jpeg"
+// import casino from "./assets/img/casino.jpeg"
 import Logo from "./assets/img/logo.png"
 import settingsLogo from "./assets/img/settings.png"
 import translations from './i18n/translations'
