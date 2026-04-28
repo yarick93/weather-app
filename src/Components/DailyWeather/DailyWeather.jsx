@@ -49,10 +49,10 @@ export default function DailyWeather({ weather, t, degree, windSpeed }) {
     <div
       style={{
         background: `linear-gradient(${daily.weather_code[selectedDay] > 50
-            ? "#465677,#778AB2"
-            : daily.weather_code[selectedDay] < 50 && daily.weather_code[selectedDay] > 2
-              ? "#D6E4FE,#FEFBBF"
-              : "#D1D3D7,#A2AEBE"
+          ? "#465677,#778AB2"
+          : daily.weather_code[selectedDay] < 50 && daily.weather_code[selectedDay] > 2
+            ? "#D6E4FE,#FEFBBF"
+            : "#D1D3D7,#A2AEBE"
           })`
       }}
       className="dailyWeather"
@@ -60,28 +60,14 @@ export default function DailyWeather({ weather, t, degree, windSpeed }) {
       <div className="days">
         {daily.time.map((timestamp, i) => {
           const date = new Date(timestamp * 1000);
-
           const formattedDate = date.toLocaleDateString(t.locale, {
             weekday: 'long',
             day: 'numeric',
             month: 'long',
           });
-
           const displayDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
-
           return (
-
-            <div
-              style={{
-                background: `linear-gradient(${daily.weather_code[i] > 50
-                    ? "DodgerBlue,lightblue"
-                    : "yellow,lightyellow"
-                  })`
-              }}
-              key={timestamp}
-              onClick={() => setSelectedDay(i)}
-              className={i === selectedDay ? "SelectedDailyWeatherItem" : "dailyWeatherItem"}
-            >
+            <div style={{ background: `linear-gradient(${daily.weather_code[i] > 50 ? "DodgerBlue,lightblue" : "yellow,lightyellow"})` }} key={timestamp} onClick={() => setSelectedDay(i)} className={i === selectedDay ? "SelectedDailyWeatherItem" : "dailyWeatherItem"}>
               <p className="date">{displayDate}</p>
               <p className="weatherIcon">{weatherIcons[daily.weather_code[i]] ?? "🌡️"}</p>
               <div className="temps">
