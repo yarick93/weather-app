@@ -1,33 +1,70 @@
-# 🌤️ Погода від сміттєпроводу
+# 🌤️ Weather App
 
-Безкоштовний прогноз погоди для будь-якого міста України та світу.
+A weather forecast web application for any city in Ukraine and around the world. Built with React and the free Open-Meteo API.
 
-## 🔗 Демо
+🔗 **Live Demo:** [https://yarick93.github.io/weather-app/](https://yarick93.github.io/weather-app/)
 
-[weather-app-xi-two-75.vercel.app](https://weather-app-xi-two-75.vercel.app)
+---
 
-## ✨ Функції
+## ✨ Features
 
-- 🔍 Пошук погоди за назвою міста
-- 📅 Прогноз на тиждень
-- 🌡️ Температура, вологість, вітер
-- 📱 Адаптивний дизайн
+- 🔍 Search weather by city name
+- 📅 7-day forecast
+- 🌡️ Temperature, humidity, wind speed
+- 📱 Fully responsive design (mobile + desktop)
+- ⚡ Fast and lightweight — no API key required
 
-## 🛠️ Технології
+---
 
-- React + Vite
-- Open-Meteo API (безкоштовне)
-- CSS
+## 🛠️ Tech Stack
 
-## 🚀 Запуск локально
+| Technology | Purpose |
+|---|---|
+| React + Vite | UI framework & build tool |
+| JavaScript (ES6+) | App logic |
+| CSS | Styling & responsive layout |
+| Open-Meteo API | Free weather data |
+| Cities database | Location search & autocomplete |
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Clone the repository
 git clone https://github.com/yarick93/weather-app.git
+
+# Navigate to the project folder
 cd weather-app
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
 ```
 
-## 👤 Автор
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
-**Yaroslav Puisha** — [GitHub](https://github.com/yarick93)
+---
+
+## 📁 Project Structure
+
+```
+weather-app/
+├── public/         # Static assets
+├── src/            # Source code
+│   ├── components/ # React components
+│   └── App.jsx     # Main app component
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## 👤 Author
+
+**Yaroslav Puisha**
+- GitHub: [@yarick93](https://github.com/yarick93)
+- Email: vpuysga@gmail.com
